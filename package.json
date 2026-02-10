@@ -1,0 +1,29 @@
+{
+  "name": "claude-multi-agent-kit",
+  "version": "1.0.2",
+  "description": "Claude Code用マルチエージェント知識ワーカーシステムのスキャフォールディングツール",
+  "keywords": [
+    "claude",
+    "claude-code",
+    "multi-agent",
+    "knowledge-worker",
+    "scaffolding",
+    "ai-agents"
+  ],
+  "license": "MIT",
+  "type": "module",
+  "bin": {
+    "claude-multi-agent-kit": "./bin/cli.js",
+    "cmak": "./bin/cli.js"
+  },
+  "files": [
+    "bin/",
+    "src/",
+    "scaffold/",
+    "examples/",
+    "README.md"
+  ],
+  "engines": {
+    "node": ">=18.0.0"
+  }
+}
