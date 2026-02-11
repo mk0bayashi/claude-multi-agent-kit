@@ -49,6 +49,7 @@ Claude Codeのマルチエージェント機能を活用し、市場調査・提
 - SNS投稿は **social-media-writer** に委任
 - データ分析は **data-analyst** に委任
 - 新規事業・新機能のアイデア発想は **ideator** に委任
+- 女性ターゲット向けセールスコピー・LPリライトは **female-copywriter** に委任
 
 ### 品質ゲート（重要な成果物では必須）
 1. **Gate 1 — 構造チェック** (editor): 論理フロー・構成・分量
