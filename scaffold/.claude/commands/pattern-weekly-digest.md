@@ -17,6 +17,10 @@ description: "パターン8: 自動クリッピング＆ダイジェスト — �
 
 ## Step 3: ダイジェスト生成
 - `content-writer` — 週次レポートを作成
-`outputs/reports/weekly_{日付}.md` に保存。
+ワークスペースに `final_weekly_digest.md` として保存。
+
+## ワークスペース
+タスク開始時に `workspaces/{YYYY-MM-DD}_{テーマ名}/` を作成し、全成果物をその中に保存する。
+他のワークスペースのファイルは、ユーザーから明示的に指示された場合を除き参照しない。
 
 $ARGUMENTS

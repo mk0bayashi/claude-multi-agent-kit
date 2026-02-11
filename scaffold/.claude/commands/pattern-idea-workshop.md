@@ -55,7 +55,7 @@ SaaS月額/年額、トランザクション課金、フリーミアム、ライ
 自社だからこそ実現できる差別化ポイントを特定してください。」
 + コンセプトメモ + competitor-watchlist.md
 
-全結果を `research/market/idea-workshop/phase1_*.md` に保存。
+全結果をワークスペースの `research/phase1_*.md` に保存。
 
 ## Phase 2: 選別 — スコアリング＆フィルタリング（Process）
 
@@ -68,7 +68,7 @@ SaaS月額/年額、トランザクション課金、フリーミアム、ライ
 | 差別化 | 競合優位性、参入障壁、自社強みとの整合 | 30% |
 
 出力: 全アイデアのスコアリング表 + Top 3-5アイデアの選定理由
-結果を `research/market/idea-workshop/phase2_scoring.md` に保存。
+結果をワークスペースの `research/phase2_scoring.md` に保存。
 
 ## Phase 3: 深掘り — ビジネスモデル具体化（Process）
 
@@ -88,7 +88,7 @@ Top 3-5の各アイデアに対して、以下のSubagentを起動:
 - リスクと対策
 - 6ヶ月ロードマップ（MVP→β→ローンチ）
 
-結果を `research/market/idea-workshop/phase3_*.md` に保存。
+結果をワークスペースの `research/phase3_*.md` に保存。
 
 ## Phase 4: 収束 — 最終評価（Quality）
 
@@ -107,6 +107,10 @@ Top 3-5の各アイデアに対して、以下のSubagentを起動:
 5. リスク分析
 6. 推奨アクション（次の1ヶ月で何をすべきか）
 
-最終版を `outputs/analysis/idea-workshop_final_{テーマ}.md` に保存。
+最終版をワークスペースに `final_idea-workshop.md` として保存。
+
+## ワークスペース
+タスク開始時に `workspaces/{YYYY-MM-DD}_{テーマ名}/` を作成し、全成果物をその中に保存する。
+他のワークスペースのファイルは、ユーザーから明示的に指示された場合を除き参照しない。
 
 $ARGUMENTS

@@ -35,6 +35,10 @@ Team Leadが議論を管理:
 - 各視点の主張と根拠
 - 合意点と対立点
 - Team Leadとしての推奨アクション
-- `outputs/analysis/stakeholder_sim_*.md` に保存
+- ワークスペースに `final_stakeholder_sim.md` として保存
+
+## ワークスペース
+タスク開始時に `workspaces/{YYYY-MM-DD}_{テーマ名}/` を作成し、全成果物をその中に保存する。
+他のワークスペースのファイルは、ユーザーから明示的に指示された場合を除き参照しない。
 
 $ARGUMENTS

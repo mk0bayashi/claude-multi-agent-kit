@@ -29,10 +29,14 @@ description: "パターン2 Agent Teams版: 多視点レビュー — レビュ�
 全Teammateの議論が収束したら、Team Lead（あなた）が:
 - 全指摘を重要度順に整理
 - 合意点と論点を区別
-- 統合フィードバックを `outputs/analysis/review_*.md` に保存
+- 統合フィードバックをワークスペースに `review_feedback.md` として保存
 
 ### 運用テクニック
 - Teammateが議論を始めない場合: `broadcast` で「他のTeammateのレビュー結果を読んで、賛否を表明してください」
 - 議論が発散する場合: `broadcast` で「主要な3点に絞って結論を出してください」
+
+## ワークスペース
+タスク開始時に `workspaces/{YYYY-MM-DD}_{テーマ名}/` を作成し、全成果物をその中に保存する。
+他のワークスペースのファイルは、ユーザーから明示的に指示された場合を除き参照しない。
 
 $ARGUMENTS

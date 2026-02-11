@@ -1,6 +1,6 @@
 {
   "name": "claude-multi-agent-kit",
-  "version": "1.0.2",
+  "version": "1.1.0",
   "description": "Claude Code用マルチエージェント知識ワーカーシステムのスキャフォールディングツール",
   "keywords": [
     "claude",

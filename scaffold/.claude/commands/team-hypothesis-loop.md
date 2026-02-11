@@ -25,6 +25,10 @@ description: "パターン5 Agent Teams版: 仮説検証ループ — 戦略家�
 ### Step 3: 収束判定
 - 各仮説の確信度が「高」になるか、3回ループしたら終了
 - Team Leadが最終仮説と検証過程を整理
-- `outputs/analysis/hypothesis_*.md` に保存
+- ワークスペースに `final_hypothesis.md` として保存
+
+## ワークスペース
+タスク開始時に `workspaces/{YYYY-MM-DD}_{テーマ名}/` を作成し、全成果物をその中に保存する。
+他のワークスペースのファイルは、ユーザーから明示的に指示された場合を除き参照しない。
 
 $ARGUMENTS

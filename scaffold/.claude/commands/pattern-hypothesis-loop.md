@@ -18,6 +18,10 @@ description: "パターン5: 仮説構築→検証ループ — 仮説とデー�
 
 ## Step 最終: レポート
 - `content-writer` — 最終仮説と検証過程をレポート化
-`outputs/analysis/hypothesis_*.md` に保存。
+ワークスペースに `final_hypothesis.md` として保存。
+
+## ワークスペース
+タスク開始時に `workspaces/{YYYY-MM-DD}_{テーマ名}/` を作成し、全成果物をその中に保存する。
+他のワークスペースのファイルは、ユーザーから明示的に指示された場合を除き参照しない。
 
 $ARGUMENTS

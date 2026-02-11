@@ -87,6 +87,34 @@ Claude Codeのマルチエージェント機能を活用し、市場調査・提
 | `/team-idea-workshop` | 11 アイデアワークショップ | 専門家間でアイデアの相互触発・議論 |
 
 ## ファイル管理
-- リサーチ結果: `research/{カテゴリ}/{YYYY-MM-DD}_{テーマ}.md`
-- 成果物ドラフト: `outputs/{カテゴリ}/draft_{名前}.md`
-- 最終版: `outputs/{カテゴリ}/final_{名前}.md`
+
+### ワークスペース分離ルール（重要）
+タスクごとに独立したワークスペースフォルダを作成し、途中成果物・最終成果物をすべてその中に保存する。
+
+```
+workspaces/{YYYY-MM-DD}_{タスク名}/
+  research/          — 調査・分析の途中成果物
+  draft_*.md         — ドラフト版
+  final_*.md         — 最終版
+```
+
+**例**: `/pattern-research-pipeline AIエージェント市場` を実行した場合
+```
+workspaces/2026-02-11_ai-agent-market/
+  research/market_size.md
+  research/competitors.md
+  research/trends.md
+  draft_report.md
+  final_report.md
+```
+
+### コンテキスト分離ルール（重要）
+- あるタスクを実施する際、**他のワークスペースのファイルは参照しない**
+- ユーザーから明示的に「{別タスク名}の結果を参照して」と指示された場合のみ、他のワークスペースを参照可能
+- Subagentへの指示にも、参照すべきワークスペースのパスを明示的に含めること
+- `.claude/research-profiles/` のプロファイルは全タスク共通で参照可能（例外）
+
+### ワークスペース命名規則
+- フォルダ名: `{YYYY-MM-DD}_{英数字ケバブケースのタスク名}`
+- タスク開始時にConductorがワークスペース名を決定し、全Subagentに伝達する
+- 同一タスクの追加作業は同じワークスペースに保存する

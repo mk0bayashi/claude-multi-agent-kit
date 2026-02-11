@@ -8,7 +8,7 @@ description: "パターン4: 競合情報マトリクス — 複数競合を並�
 
 ## Step 1: 並列競合調査（Input）
 指定された各競合企業に対し `competitor-analyst` を **並列** 起動（最大5社）。
-各レポートを `research/competitors/` に保存。
+各レポートをワークスペースの `research/` に保存。
 
 ## Step 2: 比較マトリクス生成（Process）
 - `strategist` — 全レポートを統合し、比較マトリクスを生成
@@ -16,6 +16,10 @@ description: "パターン4: 競合情報マトリクス — 複数競合を並�
 
 ## Step 3: 示唆レポート
 - `content-writer` — 比較マトリクスを基に「自社への示唆」レポートを作成
-`outputs/analysis/competitor_matrix_*.md` に保存。
+ワークスペースに `final_competitor_matrix.md` として保存。
+
+## ワークスペース
+タスク開始時に `workspaces/{YYYY-MM-DD}_{テーマ名}/` を作成し、全成果物をその中に保存する。
+他のワークスペースのファイルは、ユーザーから明示的に指示された場合を除き参照しない。
 
 $ARGUMENTS

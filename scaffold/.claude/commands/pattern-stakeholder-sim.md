@@ -18,6 +18,10 @@ Conductorが全評価を統合し、強み・弱み・主要論点を整理。
 
 ## Step 3: 最終レポート
 - `strategist` — 論点を基に推奨アクションを策定
-`outputs/analysis/stakeholder_sim_*.md` に保存。
+ワークスペースに `final_stakeholder_sim.md` として保存。
+
+## ワークスペース
+タスク開始時に `workspaces/{YYYY-MM-DD}_{テーマ名}/` を作成し、全成果物をその中に保存する。
+他のワークスペースのファイルは、ユーザーから明示的に指示された場合を除き参照しない。
 
 $ARGUMENTS

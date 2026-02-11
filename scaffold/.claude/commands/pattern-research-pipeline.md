@@ -14,15 +14,15 @@ description: "パターン1: リサーチ・パイプライン — 情報収集�
 - `deep-researcher` — テーマの市場規模・成長率・主要プレイヤー調査
 - `competitor-analyst` — 主要プレイヤー3社の詳細分析（3回起動）
 - `deep-researcher` — トレンドと課題の調査
-結果を `research/market/` に保存。
+結果をワークスペースの `research/` に保存。
 
 ## Step 2: 戦略分析（Process）
 - `strategist` — Step 1の結果を基に分析フレームワーク適用
-結果を `research/market/` に保存。
+結果をワークスペースの `research/` に保存。
 
 ## Step 3: レポート執筆（Process）
 - `content-writer` — Step 1, 2の結果を基に本文を執筆
-ドラフトを `outputs/reports/draft_*.md` に保存。
+ドラフトをワークスペースに `draft_report.md` として保存。
 
 ## Step 4: 品質ゲート（Quality）
 1. `editor` — 構造・論理レビュー
@@ -30,6 +30,10 @@ description: "パターン1: リサーチ・パイプライン — 情報収集�
 3. `persona-reviewer` — ターゲット読者視点レビュー
 NG項目はStep 3のSubagentにフィードバック付き差し戻し。
 
-## Step 5: 最終版を `outputs/reports/final_*.md` に保存。
+## Step 5: 最終版をワークスペースに `final_report.md` として保存。
+
+## ワークスペース
+タスク開始時に `workspaces/{YYYY-MM-DD}_{テーマ名}/` を作成し、全成果物をその中に保存する。
+他のワークスペースのファイルは、ユーザーから明示的に指示された場合を除き参照しない。
 
 $ARGUMENTS

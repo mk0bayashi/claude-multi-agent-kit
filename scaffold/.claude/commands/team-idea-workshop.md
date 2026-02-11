@@ -73,11 +73,15 @@ Team Leadが全Teammateの成果を統合:
 4. チーム内で合意した点 / 対立が残った点
 5. 推奨アクション
 
-`outputs/analysis/idea-workshop_final_{テーマ}.md` に保存。
+ワークスペースに `final_idea-workshop.md` として保存。
 
 ### 運用テクニック
 - 議論が活性化しない場合: `broadcast`「最も大胆なアイデアはどれですか？なぜそう思いますか？」
 - 特定のTeammateが沈黙: `write`（特定Teammate）「市場視点から見て、tech-expertの提案Xはどう思いますか？」
 - 議論が堂々巡り: `broadcast`「各Teammateは最終的な推奨Top1を1つだけ選んで理由を述べてください」
+
+## ワークスペース
+タスク開始時に `workspaces/{YYYY-MM-DD}_{テーマ名}/` を作成し、全成果物をその中に保存する。
+他のワークスペースのファイルは、ユーザーから明示的に指示された場合を除き参照しない。
 
 $ARGUMENTS

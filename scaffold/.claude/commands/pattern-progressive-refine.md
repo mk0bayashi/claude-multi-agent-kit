@@ -21,6 +21,10 @@ description: "パターン7: 段階的精緻化パイプライン — 構想→�
 2. `fact-checker` — 数値・引用検証
 
 ## Step 5: 最終仕上げ
-`outputs/reports/final_*.md` に保存。
+ワークスペースに `final_report.md` として保存。
+
+## ワークスペース
+タスク開始時に `workspaces/{YYYY-MM-DD}_{テーマ名}/` を作成し、全成果物をその中に保存する。
+他のワークスペースのファイルは、ユーザーから明示的に指示された場合を除き参照しない。
 
 $ARGUMENTS

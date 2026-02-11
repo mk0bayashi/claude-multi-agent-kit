@@ -18,12 +18,16 @@ description: "パターン3: コンテンツ制作ファクトリー — 1テー
 - `social-media-writer` — Twitter 5投稿 + LinkedIn 2投稿
 - `content-writer` — ニュースレター用ダイジェスト
 - `proposal-writer` — プレスリリース
-各結果を `outputs/content/` に保存。
+各結果をワークスペースの `research/` に保存。
 
 ## Step 4: 品質チェック（Quality）
 - `editor` — 全コンテンツのクロスチェック（メッセージ一貫性）
 - `fact-checker` — 数値・主張の検証
 
-## Step 5: 最終版を `outputs/content/final_*` に保存。
+## Step 5: 最終版をワークスペースに `final_*.md` として保存。
+
+## ワークスペース
+タスク開始時に `workspaces/{YYYY-MM-DD}_{テーマ名}/` を作成し、全成果物をその中に保存する。
+他のワークスペースのファイルは、ユーザーから明示的に指示された場合を除き参照しない。
 
 $ARGUMENTS

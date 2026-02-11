@@ -6,13 +6,7 @@ import { walkDir, hashFile, exists, copyFileWithDir, ensureDir, mergeSettings, s
 import { readManifest, writeManifest, createManifest } from '../utils/manifest.js';
 
 const WORK_DIRS = [
-  'outputs/reports',
-  'outputs/proposals',
-  'outputs/content',
-  'outputs/analysis',
-  'research/market',
-  'research/competitors',
-  'research/trends',
+  'workspaces',
 ];
 
 const FILE_CATEGORIES = {
