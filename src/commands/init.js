@@ -12,6 +12,7 @@ const WORK_DIRS = [
 const FILE_CATEGORIES = {
   '.claude/agents/': 'core',
   '.claude/commands/': 'core',
+  '.claude/task-routing.md': 'core',
   '.claude/research-profiles/': 'profile',
   '.claude/settings.json': 'config',
   'templates/': 'template',
@@ -220,5 +221,6 @@ export async function runInit(ctx) {
   log.dim('1. .claude/research-profiles/business-context.md を自社情報で編集');
   log.dim('2. .claude/research-profiles/brand-voice.md をブランドガイドラインで編集');
   log.dim('3. .claude/research-profiles/target-personas.md をターゲット読者で編集');
-  log.dim('4. Claude Code を起動して /pattern-research-pipeline <テーマ> を実行');
+  log.dim('4. Claude Code を起動してタスクを自然言語で伝える（自動でパターン推薦）');
+  log.dim('   または直接 /pattern-research-pipeline <テーマ> を実行');
 }
